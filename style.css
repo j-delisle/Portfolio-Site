@@ -1,0 +1,258 @@
+html{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #191919;
+  color: white;
+  /* text-align: center; */
+  font-family: monospace, sans-serif;
+}
+
+h1{
+  color: rgb(245, 105, 0);
+  font-size: 40px;
+}
+
+/* Navigation*/
+
+.nav-container{
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  height: 75px;
+  background: rgba(25, 25, 25, 0.75);
+}
+
+.navbar{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+.navbar a{
+  margin: 20px;
+  padding: 10px;
+  border: solid 2px rgb(245, 105, 0);
+  border-radius: 5px;
+  color: rgb(245, 105, 0);
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: rgb(245, 105, 0);
+  color: #191919;
+  opacity: 1;
+}
+
+/* Jumbotron Section*/
+
+.jumbo-pic{
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Images/caspar-camille-rubin-7SDoly3FV_0-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+}
+
+.jumbo-text{
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%,-50%);
+  color: white;
+  width: 700px;
+}
+
+.jumbo-text h1 span{
+  color: white;
+}
+
+.jumbo-text h2 span, 
+.jumbo-text h3 span{
+  color: rgb(245, 105, 0);
+}
+
+.social-media-container i{
+  color: white;
+  transition: color 500ms ease;
+}
+
+.social-media-container i:hover{
+  color: rgb(245, 105, 0);
+  transform: scale(1.2);
+}
+
+.btn-resume{
+  background:transparent;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 8px;
+  border: 2px  rgb(245, 105, 0)solid;
+  transition: background 500ms ease;
+  text-align: center;
+
+}
+
+.btn-resume a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-resume:hover{
+  background: rgb(245, 105, 0);
+  color: white;
+}
+
+
+/* Portfolio Section*/
+.portfolio{
+  height: 100vh;
+}
+
+.port-header{
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.portfolio-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 40px;
+  flex-wrap: wrap;
+}
+
+ .port-item{
+  text-align: center;
+  vertical-align: center;
+  max-width: 300px;
+  margin: 0px auto;
+  padding: 15px;
+  border: 3px solid rgb(90, 90, 94);
+  height: 550px;
+} 
+
+.port-item img{
+  position: relative;
+  top: 40px;
+  transform: rotate(90deg);
+  width: 200px;
+  height: auto;
+  margin: auto;
+}
+
+.proj-info{
+  position: relative;
+  top: 60px;
+}
+
+.proj-info button{
+  background-color: #191919;
+  display: block;
+  color: white;
+  border: 2px solid rgb(245, 105, 0);
+  border-radius: 4px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  width: 75px;
+  padding: 8px;
+  margin: 15px auto;
+}
+
+.proj-info button:hover{
+  background-color: rgb(245, 105, 0);
+  color: black;
+  cursor: pointer;
+}
+
+.proj-info i{
+  color: rgb(245, 105, 0);
+}
+
+.proj-info i:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.proj-info a{
+  text-decoration: none;
+  color: white;
+}
+
+.tech-used i{
+  padding: 10px;
+}
+
+/* About Section*/
+
+/*
+
+} */
+
+.about-header{
+  text-align: center;
+
+}
+
+.about-container{
+  display: flex;
+  justify-content: space-around;
+  padding: 25px;
+}
+ .about img{
+  border-radius: 10px;
+ }
+.about-text{
+  width: 40%;
+}
+
+/* Contact Section*/
+
+.social-media-container i{
+  padding: 15px;
+}
+
+.fa-twitter{
+  color:#00aced;
+}
+
+.fa-linkedin{
+  background:#007bb6;
+}
+
+/* .fa-github{
+
+} */
+
+/*
+#portfolio{
+  position: relative;
+  top: 75px;
+}
+
+#about{
+  position: relative;
+  top: 75px;
+}
+
+#contact{
+  position: relative;
+  top: 75px;
+} */
+
+footer {
+  position: relative;
+  top: 75px;
+}
+
+footer p{
+  text-align: left;
+  margin-left: 25px;
+  margin-bottom: 25px;
+}
